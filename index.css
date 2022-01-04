@@ -14,11 +14,11 @@
     --weight3: 600;
 }
 
-.body {
-    background-color: #FFF4B2;
-}
-
 /* CSS */
+
+nav {
+    background-color: white;
+}
 
 .customButton {
   display: flex;
@@ -158,7 +158,7 @@ transform-origin: left bottom;
     height: 100vh;
 }
 
-section {
+body {
     background-color: #f0f0f0;
 }
 
@@ -257,6 +257,100 @@ h1:last-of-type {
 }
 .orange {
     border-top: 5px solid var(--orange);
+}
+
+
+
+/* ULTIMI ANNUNCI */
+
+.sectionAnnunci {
+
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+}
+
+.annunciBox {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
+  
+.img-container {
+      height: 230px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 0px 0px 20px 20px;
+      display: inline-block;
+  }
+  
+.img-container img {
+      height: 250px;
+  }
+  
+.inner-skew {
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 250px;
+      width: 200px;
+  }
+  
+.text-container {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+.text-container h3 {
+    margin: 20px 0px 10px 0px;
+    color: var(--varyDarkBlue);
+    font-size: 18px;
+  }
+
+  .annuncioBtn {
+    align-self: center;
+    background-color: var(--second-color);
+    background-image: none;
+    background-position: 0 90%;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+  }
+
+.annuncioBtn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+.annuncioBtn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+.containerAnnunci {
+    margin-bottom: 80px;
 }
 
 
