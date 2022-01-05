@@ -1,287 +1,403 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Font Awesome  -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
 
 
+    <!-- SWIPER JS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- My CSS -->
 
     <link href="index.css" rel="stylesheet">
 
     <title>Presto</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
 
     <!-- NAVBAR -->
 
     <section>
-    <nav class="navbar navbar-fixed navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">  <img class="img-fluid" src="media/logo.png" alt="logo" width="100" height="100"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a href="" class="customButton">Accedi</a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="customButton">Registrati</a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="customButton r-link link text-underlined">Inserisci tuo annuncio</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                <button class="btn searchBtn" type="submit">Ricerca</button>
-              </form>
-          </div>
-        </div>
-      </nav>
-</section>
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img
+                        src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png"
+                        class="img-fluid" width="100" height="100"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="" class="customButton">Accedi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="customButton">Registrati</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a href="" class="customButton r-link link text-underlined">Inserisci tuo annuncio</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn searchBtn" type="submit">Ricerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
 
- <!-- HEADER -->
+    <!-- HEADER -->
 
-<section class="sectionMainHeader">
+    <section class="sectionMainHeader">
 
-    <div class="container-fluid mainHeader">
-        <div class="row align-items-center justify-content-center h-100">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-                <div class="row">
-                    <div class="d-flex justify-content-center">
-                    <h1 class="display-2 text-center r-link link text-underlined"> Presto </h1>
+        <div class="container-fluid mainHeader">
+            <div class="row align-items-center justify-content-center h-100">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="d-flex justify-content-center">
+                            <h1 class="display-2 text-center r-link link text-underlined"> Presto </h1>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <h2> Whatever & Whenever </h2>
+                        </div>
+                        <div>
+                            <p class="text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                expedita aliquam nisi quia debitis suscipit nam iusto laudantium sit </p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                    <h2> Whatever & Whenever </h2>
-                    </div>
+                </div>
+                <div class="col-12 col-md-6">
                     <div>
-                        <p class="text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia expedita aliquam nisi quia debitis suscipit nam iusto laudantium sit </p>
+                        <img src="./media/404 Not Found.svg" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div>
-                    <img src="./media/404 Not Found.svg" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- sezione categorie -->
+
+    <section>
+        <div class="sectionHeader">
+            <h1 class="r-link link text-underlined">Esplora le nostre sezioni</h1>
+        </div>
+        <div class="row1-container">
+            <div class="box box-down cyan">
+                <h2>Motori</h2>
+                <img class="img-fluid" src="./media/motorcycle.png" alt="" width="60">
+                <button class="btn sectionBtn"> Cerca </button>
+            </div>
+            <div class="box red">
+                <h2>Market</h2>
+                <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+                <button class="btn sectionBtn"> Cerca </button>
+            </div>
+
+            <div class="box box-down blue">
+                <h2>Immobili</h2>
+                <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+                <button class="btn sectionBtn"> Cerca </button>
+            </div>
+        </div>
+        <div class="row2-container">
+            <div class="box orange">
+                <h2>Lavoro</h2>
+                <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+                <button class="btn sectionBtn"> Cerca </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- sezione annunci -->
+
+    <!-- Slider main container -->
+
+    <section>
+        <div class="sectionAnnunci">
+            <h1 class="r-link link text-underlined"> Ultimi annunci </h1>
+        </div>
+        <div class="container-fluid containerAnnunci">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-12">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex justify-content-evenly">
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex justify-content-evenly">
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide d-flex justify-content-evenly">
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- sezione lavoro form -->
+
+    <section class="bg-white paddingLavoro">
+        <div class="sectionLavoro">
+            <h1 class="r-link link text-underlined"> Lavora con noi </h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-12 col-md-6">
+                    <img src="media/vecteezy_business-team-planning-working-process_.jpg" alt="career"
+                        class="img-fluid d-flex justify-content-center">
+                    <h4 class="text-center">Stai cercando lavoro?</h4>
+                    <h4 class="text-center link text-underlined">Contattaci!</h4>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form class="container formContainer" action="#">
+                        <label class="labelForm" for="customerName"></label>Nome Cognome
+                        <input class="inputForm" name="customerName" required="" type="text" />
+                        <label class="labelForm" for="customerEmail"></label>Email
+                        <input class="inputForm" name="customerEmail" required="" type="email" />
+                        <label class="labelForm" for="customerPhone">Telefono</label>
+                        <input class="inputForm" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
+                        <label class="labelForm" for="customerNote"></label>Tuo messaggio
+                        <textarea name="customerNote" required="" rows="4"></textarea>
+                        <h3 class="formTitle">
+                            Please provide all the information you can.
+                        </h3>
+                        <button class="formBtn" id="customerOrder">SUBMIT</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- sezione categorie -->
+    <!-- footer -->
 
-<section>
-    <div class="sectionHeader">
-        <h1 class="r-link link text-underlined">Esplora le nostre sezioni</h1>
-    </div>
-      <div class="row1-container">
-        <div class="box box-down cyan">
-          <h2>Motori</h2>
-          <img class="img-fluid" src="./media/motorcycle.png" alt="" width="60">
-          <button class="btn sectionBtn"> Cerca </button>
-        </div>
-        <div class="box red">
-          <h2>Market</h2>
-          <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
-          <button class="btn sectionBtn"> Cerca </button>
-        </div>
-    
-        <div class="box box-down blue">
-          <h2>Immobili</h2>
-          <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
-          <button class="btn sectionBtn"> Cerca </button>
-        </div>
-      </div>
-      <div class="row2-container">
-        <div class="box orange">
-          <h2>Lavoro</h2>
-          <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
-          <button class="btn sectionBtn"> Cerca </button>
-        </div>
-      </div>
-</section>
-
-<!-- sezione annunci -->
-
-<section>
-    <div class="sectionAnnunci">
-       <h1 class="r-link link text-underlined"> Ultimi annunci </h1>
-    </div>
-    <div class="container-fluid containerAnnunci">
-    <div class="row align-items-center justify-content-evenly">
-        <div class="annunciBox col-12 col-md-3">
-        <div class="img-container">
-          <div class="img-inner">
-            <div class="inner-skew">
-              <img class="img-fluid w-100" src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
-            </div>
-          </div>
-        </div>
-        <div class="text-container">
-          <h3>Titolo annuncio</h3>
-          <div>
-            <p> Lorem ipsum something something</p>
-            <button class="btn annuncioBtn"> Leggi annuncio </button>
-        </div>
-        </div>
-        </div>
-        <div class="annunciBox col-12 col-md-3">
-            <div class="img-container">
-              <div class="img-inner">
-                <div class="inner-skew">
-                  <img class="img-fluid w-100" src="/media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+    <section class="sectionFooter">
+        <footer class="wrapperFooter">
+            <div class="footer-hero">
+                <div class="footer-contact">
+                    <h2 class="heading-h2-v2">Iscriviti alla nostra newsletter!</h2>
+                    <div class="gap-top-35">
+                        <input class="inputForm" name="customerName" required="" type="text" />
+                        <button class="formBtn">SUBMIT</button>
+                    </div>
                 </div>
-              </div>
+                <img src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png"
+                    loading="lazy" width="281" alt="" class="footer-avatar img-fluid align-items-center">
             </div>
-            <div class="text-container">
-              <h3>Titolo annuncio</h3>
-              <div>
-                <p> Lorem ipsum something something</p>
-                <button class="btn annuncioBtn"> Leggi annuncio </button>
-            </div>
-            </div>
-        </div>
-        <div class="annunciBox col-12 col-md-3">
-            <div class="img-container">
-              <div class="img-inner">
-                <div class="inner-skew">
-                  <img class="img-fluid w-100" src="/media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
-                </div>
-              </div>
-            </div>
-            <div class="text-container">
-              <h3>Titolo annuncio</h3>
-              <div>
-                <p> Lorem ipsum something something</p>
-                <button class="btn annuncioBtn"> Leggi annuncio </button>
-            </div>
-            </div>
-        </div>
-        <div class="annunciBox col-12 col-md-3">
-            <div class="img-container">
-              <div class="img-inner">
-                <div class="inner-skew">
-                  <img class="img-fluid w-100 h-100" src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
-                </div>
-              </div>
-            </div>
-            <div class="text-container">
-              <h3>Titolo annuncio</h3>
-              <div>
-                <p> Lorem ipsum something something</p>
-                <button class="btn annuncioBtn"> Leggi annuncio </button>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
-<!-- sezione lavoro -->
-
-</section>
-
-<section class="bg-white paddingLavoro">
-    <div class="sectionLavoro">
-        <h1 class="r-link link text-underlined"> Lavora con noi </h1>
-    </div>
-    <div class="container-fluid">
-        <div class="row align-items-center justify-content-evenly">
-            <div class="col-12 col-md-6">
-                <img src="media/vecteezy_business-team-planning-working-process_.jpg" alt="career" class="img-fluid d-flex justify-content-center">
-                <h4 class="text-center">Stai cercando lavoro?</h4>
-                <h4 class="text-center link text-underlined">Contattaci!</h4>
             </div>
-            <div class="col-12 col-md-6">
-                <form class="container formContainer"action="#">
-                <label class="labelForm" for="customerName"></label>Nome Cognome
-                <input class="inputForm" name="customerName" required="" type="text" />
-                <label class="labelForm" for="customerEmail"></label>Email
-                <input class="inputForm" name="customerEmail" required="" type="email" />
-                <label class="labelForm" for="customerPhone">Telefono</label>
-                <input class="inputForm" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
-                <label class="labelForm" for="customerNote"></label>Tuo messaggio
-                <textarea name="customerNote" required="" rows="4"></textarea>
-                <h3 class="formTitle">
-                 Please provide all the information you can.
-                </h3>
-                <button class="formBtn" id="customerOrder">SUBMIT</button>   
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+        </footer>
+    </section>
 
 
-<!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<section class="sectionFooter">
-<footer class="wrapperFooter">  
-    <div class="footer-hero">
-        <div class="footer-contact">
-        <h2 class="heading-h2-v2">Iscriviti alla nostra newsletter!</h2>
-        <div class="gap-top-35">
-            <input class="inputForm" name="customerName" required="" type="text" />
-            <button class="formBtn">SUBMIT</button> 
-        </div>
-        </div>
-        <img src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png" loading="lazy" width="281" alt="" class="footer-avatar img-fluid align-items-center">
-    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
 
-    <div class="footer-content">
-        </div>
-        <div class="footer-grid">
-            <div>
-                <a href="/about" class="footer-link-2">About</a>
-                <a href="/jobs" class="footer-link-2">Jobs</a>
-                <a href="https://www.avo.app/docs/" class="footer-link-2">Docs</a>
-                <a href="/security" class="footer-link-2">Security</a>
-            </div>
-            <div><a href="/terms" class="footer-link-2">Terms and Conditions</a>
-                <a href="/privacy" class="footer-link-2">Privacy Policy</a>
-                <a href="/cookies" class="footer-link-2">Cookie Policy</a>
-            </div>
-            <div>
-                <div class="footer-link-2">Let’s chat!
-                </div>
-                <div class="social-wrap">
-                    <a href="https://facebook.com/" class="socila-link w-inline-block">
-                    <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f7722f7ef58_icon%20(2).svg" loading="lazy" alt="">
-                    </a>
-                    <a href="https://twitter.com/" class="socila-link w-inline-block">
-                    <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3fa670f7ef56_icon%20(4).svg" loading="lazy" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/" class="socila-link w-inline-block">
-                    <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f1f0df7ef59_icon%20(1).svg" loading="lazy" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/ class="socila-link w-inline-block">
-                    <img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f768ef7ef57_icon%20(3).svg" loading="lazy" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-</section>
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  </body>
+
+</body>
+
 </html>
