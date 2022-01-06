@@ -572,6 +572,24 @@ textarea {
     background: #484848;
 }
 
+@media screen and (max-width: 996px){
+    .swiper-slide {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .swiper-slide {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .swiper-slide {
+        width: 55%;
+    }
+}
+
 
 @media (min-width: 950px) {
     .row1-container {
