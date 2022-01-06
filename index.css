@@ -354,6 +354,42 @@ h1:last-of-type {
     margin-bottom: 80px;
 }
 
+
+/* SWIPER */
+
+.swiper {
+    width: 85%;
+    height: 500px;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 30px; */
+    /* background-color: #f8f4e5; */
+  }
+
+.swiper-slide{
+      width: 25%;
+  }
+
+
+
+.btnPrev {
+    color: var(--varyDarkBlue);
+}
+
+.btnNext {
+    color: var(--varyDarkBlue);
+}
+
+.btnPrev:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btnNext:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
 .sectionLavoro {
     text-align: center;
     line-height: 0.8;
@@ -534,22 +570,6 @@ textarea {
 
 .sectionFooter {
     background: #484848;
-}
-
-
-/* SWIPER */
-
-.swiper {
-    width: 100%;
-    height: 600px;
-  }
-
-.swiper-button-prev {
-    color: var(--varyDarkBlue);
-}
-
-.swiper-button-next {
-    color: var(--varyDarkBlue);
 }
 
 
