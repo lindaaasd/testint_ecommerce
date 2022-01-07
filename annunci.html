@@ -35,7 +35,7 @@
     <section>
         <nav class="navbar navbar-fixed navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img
+                <a class="navbar-brand" href="index.html"> <img
                     src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png"
                     class="img-fluid" width="100" height="100"> </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -98,11 +98,8 @@
                         <button class="categoryBtn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categorie
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Motori</a>
-                            <a class="dropdown-item" href="#">Market</a>
-                            <a class="dropdown-item" href="#">Lavoro</a>
-                            <a class="dropdown-item" href="#">Immobili</a>
+                        <div id="dropdownMenuCategories" class="dropdown-menu">
+                        
                         </div>
                     </div>
                 </div>
@@ -120,11 +117,20 @@
         </div>
     </section>
 
-    <!-- RISULTS AND FILTERS SECTION -->
+    <!-- RESULTS AND FILTERS SECTION -->
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-3 py-5">
+                <div>
+                    <h4 class="r-link link text-underlined">Filtra per categoria</h4>
+                    <div id="categoriesFilterWrapper">
+
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                   
+                </div>
             </div>
             <div class="col-12 col-md-9">
                 <div class="row" id="announcementWrapper">

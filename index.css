@@ -397,6 +397,11 @@ h1:last-of-type {
     font-size: 18px;
   }
 
+h5 {
+    font-size: 13px;
+    color: var(--varyDarkBlue);
+}
+
 .annuncioBtn {
     align-self: center;
     background-color: var(--second-color);

@@ -2,7 +2,7 @@
     {
         "id":1,
         "name": "Huawei X5",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "120.12"
     },
     {
@@ -14,7 +14,7 @@
     {
         "id": 3,
         "name": "Mazza da Baseball",
-        "category": "Sport",
+        "category": "Market",
         "price": "20.15"
     },
     {
@@ -26,31 +26,31 @@
     {
         "id": 5,
         "name": "Felpa usata",
-        "category": "Abbigliamento",
+        "category": "Market",
         "price": "10.42"
     },
     {
         "id": 6,
         "name": "Divani due posti",
-        "category": "Arredamento",
+        "category": "Market",
         "price":"400.64"
     },
     {
         "id": 7,
         "name": "Pala",
-        "category": "Giardinaggio",
+        "category": "Market",
         "price":"30.45"
     },
     {
         "id": 8,
         "name": "Master of Pupo",
-        "category": "Musica",
+        "category": "Market",
         "price": "15.64"
     },
     {
         "id": 9,
         "name": "TV Samsung",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "230.42"
     },
     {
@@ -62,7 +62,7 @@
     {
         "id": 11,
         "name": "Pallone da calcio",
-        "category": "Sport",
+        "category": "Market",
         "price": "30.12"
     },
     {
@@ -74,31 +74,31 @@
     {
         "id": 13,
         "name": "Sciarpa scolorita",
-        "category": "Abbigliamento",
+        "category": "Market",
         "price": "5.23"
     },
     {
         "id": 14,
         "name": "Lampada",
-        "category": "Arredamento",
+        "category": "Market",
         "price": "70.65"
     },
     {
         "id": 15,
         "name": "Concime",
-        "category": "Giardinaggio",
+        "category": "Market",
         "price": "2.45"
     },
     {
         "id": 16,
         "name": "Basso nuovo",
-        "category": "Musica",
+        "category": "Market",
         "price": "300.62"
     },
     {
         "id": 17,
         "name": "Cuffie Sony",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "120.65"
     },
     {
@@ -110,38 +110,38 @@
     {
         "id": 19,
         "name": "Pattini",
-        "category": "Sport",
+        "category": "Market",
         "price": "90.64"
     },
 
     {
         "id": 21,
         "name": "Guanti invernali",
-        "category": "Abbigliamento",
+        "category": "Market",
         "price": "22.04"
     },
     {
         "id": 22,
         "name": "Scrivania in vetro",
-        "category": "Arredamento",
+        "category": "Market",
         "price": "600.63"
     },
     {
         "id": 23,
         "name": "Secchio",
-        "category": "Giardinaggio",
+        "category": "Market",
         "price": "30.43"
     },
     {
         "id": 24,
         "name": "Compilation Pupo",
-        "category": "Musica",
+        "category": "Market",
         "price": "9.93"
     },
     {
         "id": 25,
         "name": "Auricolari Sennheiser",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "120.93"
     },
     {
@@ -153,7 +153,7 @@
     {
         "id": 27,
         "name": "Set mazze da golf",
-        "category": "Sport",
+        "category": "Market",
         "price": "4320.43"
     },
     {
@@ -165,31 +165,31 @@
     {
         "id": 29,
         "name": "Zaino Decathlon",
-        "category": "Abbigliamento",
+        "category": "Market",
         "price": "55.55"
     },
     {
         "id": 30,
         "name": "Comodino",
-        "category": "Arredamento",
+        "category": "Market",
         "price": "210.12"
     },
     {
         "id": 31,
         "name": "Rastrello",
-        "category": "Giardinaggio",
+        "category": "Market",
         "price": "5.62"
     },
     {
         "id": 32,
         "name": "Compilation Nino D'Angelo",
-        "category": "Musica",
+        "category": "Market",
         "price": "1.91"
     },
     {
         "id": 33,
         "name": "IPhone X",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "1300.41"
     },
     {
@@ -201,38 +201,38 @@
     {
         "id": 35,
         "name": "Guanti da palestra",
-        "category": "Sport",
+        "category": "Market",
         "price": "11.54"
     },
 
     {
         "id": 37,
-        "name": "Scarpe Nike",
-        "category": "Abbigliamento",
+        "name": "Scarpe Adidas",
+        "category": "Market",
         "price": "240.33"
     },
     {
         "id": 38,
-        "name": "Poltrona",
-        "category": "Arredamento",
-        "price": "420.66"
+        "name": "Cambio caldaia",
+        "category": "Lavoro",
+        "price": "200"
     },
     {
         "id": 39,
-        "name": "Semi",
-        "category": "Giardinaggio",
-        "price": "4.43"
+        "name": "Isolamento acustico stanza",
+        "category": "Lavoro",
+        "price": "400"
     },
     {
         "id": 40,
         "name": "Biglietto Gods Of Metal",
-        "category": "Musica",
+        "category": "Market",
         "price": "150.65"
     },
     {
         "id": 41,
         "name": "Macbook Pro",
-        "category": "Elettronica",
+        "category": "Market",
         "price": "2340.37"
     },
     {
@@ -243,9 +243,9 @@
     },
     {
         "id": 43,
-        "name": "Canoa",
-        "category": "Sport",
-        "price": "520.03"
+        "name": "Istallazione cucina gas",
+        "category": "Lavoro",
+        "price": "100"
     },
     {
         "id": 44,
@@ -255,32 +255,32 @@
     },
     {
         "id": 45,
-        "name": "Jeans",
-        "category": "Abbigliamento",
-        "price": "55.54"
+        "name": "Dipingere muri",
+        "category": "Lavoro",
+        "price": "990"
     },
     {
         "id": 46,
-        "name": "Lampadario",
-        "category": "Arredamento",
+        "name": "Riparazione lavastoviglie",
+        "category": "Lavoro",
         "price": "280.54"
     },
     {
         "id": 47,
         "name": "Trattore",
-        "category": "Giardinaggio",
+        "category": "Motori",
         "price": "12000.09"
     },
     {
         "id": 48,
-        "name": "Plettro",
-        "category": "Musica",
-        "price": "0.99"
+        "name": "Montaggio mobili Ikea",
+        "category": "Lavoro",
+        "price": "200"
     },
     {
         "id": 49,
-        "name": "Modem",
-        "category": "Mimmo",
-        "price": "2.99"
+        "name": "Potatura alberi",
+        "category": "Lavoro",
+        "price": "20.99"
     }
 ]
