@@ -1,0 +1,191 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Font Awesome  -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    
+    
+    <!-- SWIPER JS -->
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <!-- My CSS -->
+    
+    <link href="index.css" rel="stylesheet">
+    
+    <title>Presto</title>
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    
+    <section>
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img
+                    src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png"
+                    class="img-fluid" width="100" height="100"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="" class="customButton">Accedi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="customButton">Registrati</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a href="" class="customButton r-link link text-underlined">Inserisci tuo annuncio</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn searchBtn" type="submit">Ricerca</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- HEADER -->
+    
+    <section class="sectionMainHeader">    
+        <div class="container mainHeaderAnnunci">
+            <div class="row align-items-start justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="d-flex justify-content-center">
+                            <h1 class="text-center r-link link text-underlined"> I nostri annunci </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEARCH SECTION -->
+    
+    <section>
+        <div class="container searchBar d-flex justify-content-center">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-3 d-flex justify-content-start searchBarText">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-row align-items-center justify-content-start">
+                            <i class="searchBarIcon fa-solid fa-2x fa-magnifying-glass"></i>
+                            <input class="searchBarInput" type="search" id="search_text" placeholder="Villa, Moto, Telefono" size="35">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3  d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button class="categoryBtn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorie
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Motori</a>
+                            <a class="dropdown-item" href="#">Market</a>
+                            <a class="dropdown-item" href="#">Lavoro</a>
+                            <a class="dropdown-item" href="#">Immobili</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-row align-items-center justify-content-end">
+                            <i class="searchBarIcon fa-solid fa-2x fa-location-dot"></i>
+                            <input class="searchBarInput" type="search" name="position" placeholder="Tutta Italia" size="35">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- RISULTS AND FILTERS SECTION -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 py-5">
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row" id="announcementWrapper">
+                    <!-- <div class="col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="annunciBox">
+                                    <div class="img-container">
+                                        <div class="img-inner">
+                                            <div class="inner-skew">
+                                                <img class="img-fluid w-100"
+                                                    src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-container">
+                                        <h3>Titolo annuncio</h3>
+                                        <div>
+                                            <p> Lorem ipsum something something</p>
+                                            <p><strong>100€</strong></p>
+                                            <button class="btn annuncioBtn"> Leggi annuncio </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- FOOTER      -->
+    
+    
+    <section class="sectionFooter">
+        <footer class="wrapperFooter">
+            <div class="footer-hero">
+                <div class="footer-contact">
+                    <h2 class="heading-h2-v2">Iscriviti alla nostra newsletter!</h2>
+                    <div class="gap-top-35">
+                        <input class="inputForm" name="customerName" required="" type="text" />
+                        <button class="formBtn">SUBMIT</button>
+                    </div>
+                </div>
+                <img src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png"
+                loading="lazy" width="281" alt="" class="footer-avatar img-fluid align-items-center">
+            </div>
+            
+        </div>
+    </footer>
+</section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

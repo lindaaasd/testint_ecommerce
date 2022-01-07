@@ -156,11 +156,91 @@ transform-origin: left bottom;
 
 .mainHeader {
     height: 100vh;
+    padding-top: 50px;
+}
+
+
+.mainHeaderAnnunci {
+    height: 30vh;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
 }
 
 body {
     background-color: #f0f0f0;
 }
+
+.searchBar {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    height: 15vh;
+    width: 70%;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: white;
+
+}
+
+.searchBarIcon {
+ padding: 20px;
+}
+
+.searchBarText {
+    margin: none;
+    padding-right: 20px;
+}
+
+
+.categoryBtn {
+
+    align-self: center;
+    background-color: var(--second-color);
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    padding: 20px;
+
+}
+
+.searchBarInput {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #f8f4e5;
+    height: 40px;
+}
+
+.searchBarInput:focus, textarea:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.searchBarInput:focus-visible, textarea:focus-visible {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    background-color: #f8f4e5;
+}
+
 
 
 /* sections of homepage */
@@ -616,7 +696,6 @@ textarea {
     }
     
 }
-
 
 @media (min-width: 768px) {
     .searchBtn {
