@@ -3,9 +3,11 @@ fetch('./annunci.json')
 .then(data => {
 
 
-    function populateAds(){
+    function populateAds(ads){
         const announcementWrapper = document.querySelector('#announcementWrapper')
-        data.forEach(announcement => {
+        console.log ("populate ads with: "+ads);
+        announcementWrapper.innerHTML = '';
+        ads.forEach(announcement => {
             let card = document.createElement('div');
     
             card.classList.add('col-12', 'col-md-4');
@@ -48,11 +50,11 @@ fetch('./annunci.json')
         const dropdownMenuCategories = document.querySelector('#dropdownMenuCategories');
 
         let menuCategories = new Set (data.map(ad => ad.category));
+
         menuCategories.forEach(menuCategory => {
-            console.log ("categoria: "+menuCategory);
 
             let checkMenu = document.createElement('button');
-            checkMenu.classList.add('dropdown-item');
+            checkMenu.classList.add('dropdown-item' , 'filterCategory2');
             checkMenu.innerHTML = 
             `
             ${menuCategory}
@@ -62,13 +64,12 @@ fetch('./annunci.json')
 
         let categories = new Set (data.map(ads => ads.category) )
 
-
         categories.forEach(category => {
             let check = document.createElement('div');
             check.classList.add('form-check');
             check.innerHTML =
             `
-                <input class="form-check-input" type="checkbox" value="" id="checkbox${category}">
+                <input class="form-check-input filterCategory" type="checkbox" value="${category}" id="checkbox${category}">
                 <label class="form-check-label" for="checkbox${category}">
                 ${category}
                 </label>
@@ -77,41 +78,33 @@ fetch('./annunci.json')
             categoriesFilterWrapper.appendChild(check);
         })
 
+    }
 
 
-        // <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    function attachFilterCategoryEvent(){
+        
+        let checks = document.querySelectorAll('.filterCategory')
+       
+        checks.forEach(check => {
+            
+            check.addEventListener('input' , () => {
+               
 
-        // </div>
+                let checkedCategories = Array.from(checks)
+                                             .filter(check => check.checked)
+                                             .map(check => check.value)
+               
+
+                let filteredAds = data.filter(ad => checkedCategories.includes(ad.category))
+             
+                populateAds(filteredAds)
+            })
+        })
 
     }
 
+
     populateCategoriesFilter()
-    populateAds()
+    attachFilterCategoryEvent()
+    populateAds(data)
 })
-
-
-
-{/* <div class="col-12">
-<div class="row">
-    <div class="col-4">
-        <div class="annunciBox">
-            <div class="img-container">
-                <div class="img-inner">
-                    <div class="inner-skew">
-                        <img class="img-fluid w-100"
-                            src="./media/daniel-reyes-LElCqbdsNz0-unsplash (1).jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="text-container">
-                <h3>Titolo annuncio</h3>
-                <div>
-                    <p> Lorem ipsum something something</p>
-                    <p><strong>100€</strong></p>
-                    <button class="btn annuncioBtn"> Leggi annuncio </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> */}
