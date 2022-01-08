@@ -97,12 +97,36 @@ fetch('./annunci.json')
 
                 let filteredAds = data.filter(ad => checkedCategories.includes(ad.category))
              
+                if(filteredAds.length == 0){
+                    populateAds(data)
+                } else {
                 populateAds(filteredAds)
+                }
+
             })
         })
 
     }
 
+    function filterBySearch(search){
+
+        let filtered = data.filter(ad => {
+            return ad.name.toLowerCase().includes(search.toLowerCase())
+        })
+
+        populateAds(filtered);
+    }
+
+    const searchInput = document.querySelector('#searchInput');
+    const inputSearchBar = document.querySelector('#inputSearchBar');
+
+    searchInput.addEventListener('input', () =>{
+        filterBySearch(searchInput.value)
+    })
+
+    inputSearchBar.addEventListener('input', () => {
+        filterBySearch(inputSearchBar.value)
+    })
 
     populateCategoriesFilter()
     attachFilterCategoryEvent()
