@@ -5,7 +5,6 @@ fetch('./annunci.json')
 
     function populateAds(ads){
         const announcementWrapper = document.querySelector('#announcementWrapper')
-        console.log ("populate ads with: "+ads);
         announcementWrapper.innerHTML = '';
         ads.forEach(announcement => {
             let card = document.createElement('div');
@@ -80,7 +79,6 @@ fetch('./annunci.json')
 
     }
 
-
     function attachFilterCategoryEvent(){
         
         let checks = document.querySelectorAll('.filterCategory')
@@ -117,17 +115,65 @@ fetch('./annunci.json')
         populateAds(filtered);
     }
 
+    function populatePriceFilter(){
+
+        let prices = data.map(ad => Number(ad.price));
+        let sorted = prices.sort((a, b) => a - b );
+        let min = Math.floor(sorted[0]);
+        let max = Math.ceil(sorted[sorted.length - 1]);
+
+
+
+        priceInputs.forEach(input =>{
+            input.max = max;
+            input.min = min; 
+            
+        })
+        console.log ("valude di price input 0"+ priceInputs[0].value );
+
+        priceInputs[0].value =  min;
+        priceInputs[1].value = max;
+
+
+        rangeValues.innerHTML = `${min} € - ${max} €`
+
+
+    }
+
+    function filterByPrice(min, max) {
+        let filtered = data.filter(ad => Number(ad.price) <= max && Number(ad.price) >= min
+        )
+        populateAds(filtered);
+    }
+
     const searchInput = document.querySelector('#searchInput');
     const inputSearchBar = document.querySelector('#inputSearchBar');
+    const priceInputs = document.querySelectorAll('.priceInputs');
+    const rangeValues = document.querySelector ('.rangeValues');
+
+    populatePriceFilter();
 
     searchInput.addEventListener('input', () =>{
         filterBySearch(searchInput.value)
     })
 
-    inputSearchBar.addEventListener('input', () => {
+    inputSearchBar.addEventListener('priceInput', () => {
         filterBySearch(inputSearchBar.value)
     })
 
+    priceInputs.forEach(input =>
+        input.addEventListener('input', () => {
+           let values =  Array.from(priceInputs).map(princeInput => princeInput.value)
+                              .sort((a,b) => a - b)
+
+            rangeValues.innerHTML = `${values[0]} € - ${values[1]} €`
+            filterByPrice(values[0], values[1]);
+        }
+         ) 
+        )
+
+
+    populatePriceFilter()
     populateCategoriesFilter()
     attachFilterCategoryEvent()
     populateAds(data)

@@ -9,6 +9,7 @@
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
     --veryLightGray: hsl(0, 0%, 98%);
+    --form-bcg-color: #f8f4e5;
     --weight1: 200;
     --weight2: 400;
     --weight3: 600;
@@ -247,11 +248,6 @@ body {
 }
 
 
-
-
-
-
-
 /* sections of homepage */
 
 
@@ -348,6 +344,90 @@ h1:last-of-type {
     border-top: 5px solid var(--orange);
 }
 
+/* FILTER CATEGORIES */
+
+section.range-slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    float: left;
+    text-align: center;
+  }
+  section.range-slider input[type=range] {
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 14px;
+    background: var(--form-bcg-color);
+    box-shadow: inset 0 1px 0 0 #cdc6c6, inset 0 -1px 0 0 #d9d4d4;
+    -webkit-box-shadow: inset 0 1px 0 0 #cdc6c6, inset 0 -1px 0 0 #d9d4d4;
+    overflow: hidden;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    outline: none;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  section.range-slider input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 14px;
+    border: 0.3px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--second-color)), color-stop(100%, var(--second-color)));
+    /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top, var(--second-color) 0, var(--second-color) 100%);
+    /* older mobile safari and android > 2.2 */
+    background-image: linear-gradient(to bottom, var(--second-color) 0, var(--second-color) 100%);
+    /* W3C */
+  }
+  section.range-slider input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 14px;
+    background-image: linear-gradient(to bottom, var(--second-color) 0, var(--second-color) 100%);
+    /* W3C */
+  }
+  section.range-slider input[type=range]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -ms-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 14px;
+    border: 0;
+    background-image: linear-gradient(to bottom, var(--second-color) 0, var(--second-color) 100%);
+    /* W3C */
+  }
+  section.range-slider input[type=range]::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: black;
+    border: 0;
+  }
+  section.range-slider input[type=range]:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+  }
+  section.range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+  }
 
 
 /* ULTIMI ANNUNCI */
