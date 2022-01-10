@@ -80,39 +80,26 @@ fetch('./annunci.json')
     }
 
     function attachFilterCategoryEvent(){
-        
-        let checks = document.querySelectorAll('.filterCategory')
-       
+        checks = document.querySelectorAll('.filterCategory')
+
         checks.forEach(check => {
             
             check.addEventListener('input' , () => {
                
-
-                let checkedCategories = Array.from(checks)
-                                             .filter(check => check.checked)
-                                             .map(check => check.value)
-               
-
-                let filteredAds = data.filter(ad => checkedCategories.includes(ad.category))
-             
-                if(filteredAds.length == 0){
-                    populateAds(data)
-                } else {
-                populateAds(filteredAds)
-                }
+            globalFilter()
 
             })
         })
 
     }
 
-    function filterBySearch(search){
+    function filterBySearch(arr , search){
 
-        let filtered = data.filter(ad => {
+        let filtered = arr.filter(ad => {
             return ad.name.toLowerCase().includes(search.toLowerCase())
         })
 
-        populateAds(filtered);
+        return filtered;
     }
 
     function populatePriceFilter(){
@@ -140,21 +127,52 @@ fetch('./annunci.json')
 
     }
 
-    function filterByPrice(min, max) {
-        let filtered = data.filter(ad => Number(ad.price) <= max && Number(ad.price) >= min
+    function globalFilter(){
+
+        let checkedCategories = Array.from(checks)
+                                     .filter(check => check.checked)
+                                     .map(check => check.value)
+        
+        let minAndMaxPrice =  Array.from(priceInputs)
+                                   .map(priceInput => priceInput.value)
+                                   .sort((a,b) => a - b)
+
+
+        let filteredByCategory = data.filter(ad => checkedCategories.includes(ad.category))
+
+        if(filteredByCategory.length == 0){
+            filteredByCategory = data
+        }
+
+        let filteredBySearch = filterBySearch (filteredByCategory , searchInput.value)
+
+        let filteredByPrice = filterByPrice(filteredBySearch, minAndMaxPrice[0], minAndMaxPrice[1]);     
+
+        populateAds(filteredByPrice);
+     
+
+    }
+
+    function filterByPrice(array , min, max) {
+        let filtered = array.filter(ad => Number(ad.price) <= max && Number(ad.price) >= min
         )
-        populateAds(filtered);
+        return filtered;
     }
 
     const searchInput = document.querySelector('#searchInput');
     const inputSearchBar = document.querySelector('#inputSearchBar');
     const priceInputs = document.querySelectorAll('.priceInputs');
     const rangeValues = document.querySelector ('.rangeValues');
+    let checks = document.querySelectorAll('.filterCategory')
+
 
     populatePriceFilter();
 
     searchInput.addEventListener('input', () =>{
-        filterBySearch(searchInput.value)
+
+        globalFilter()
+
+        // filterBySearch(searchInput.value)
     })
 
     inputSearchBar.addEventListener('priceInput', () => {
@@ -163,13 +181,18 @@ fetch('./annunci.json')
 
     priceInputs.forEach(input =>
         input.addEventListener('input', () => {
-           let values =  Array.from(priceInputs).map(princeInput => princeInput.value)
+           let values =  Array.from(priceInputs)
+                              .map(priceInput => priceInput.value)
                               .sort((a,b) => a - b)
 
             rangeValues.innerHTML = `${values[0]} € - ${values[1]} €`
+
+            globalFilter()
+
             filterByPrice(values[0], values[1]);
-        }
-         ) 
+        }) 
+
+
         )
 
 
