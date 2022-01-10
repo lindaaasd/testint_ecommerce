@@ -2,6 +2,12 @@ fetch('./annunci.json')
 .then(response => response.json())
 .then(data => {
 
+    const searchInput = document.querySelector('#searchInput');
+    const inputSearchBar = document.querySelector('#inputSearchBar');
+    const priceInputs = document.querySelectorAll('.priceInputs');
+    const rangeValues = document.querySelector ('.rangeValues');
+    let checks = document.querySelectorAll('.filterCategory');
+    const orderRadio = document.querySelectorAll('.order-input');
 
     function populateAds(ads){
         const announcementWrapper = document.querySelector('#announcementWrapper')
@@ -146,10 +152,45 @@ fetch('./annunci.json')
 
         let filteredBySearch = filterBySearch (filteredByCategory , searchInput.value)
 
-        let filteredByPrice = filterByPrice(filteredBySearch, minAndMaxPrice[0], minAndMaxPrice[1]);     
+        let filteredByPrice = filterByPrice(filteredBySearch, minAndMaxPrice[0], minAndMaxPrice[1]);  
+        
+        let order = Array.from(orderRadio)
+                         .filter(radio => radio.checked)[0];
+                         
+        switch(order.value) {
+            case 'DescAlpha':
+                filteredByPrice.sort((a,b) => {
+                    let nameA = a.name.toUpperCase()
+                    let nameB = b.name.toUpperCase()
+                    if (nameA < nameB) {
+                        return -1;
+                    }
+                    if (nameA > nameB){
+                        return 1;
+                    }
+                    return 0;
+                });
+
+                break; 
+            case 'AscAlpha':
+                filteredByPrice.sort((a,b) => {
+                    let nameA = a.name.toUpperCase()
+                    let nameB = b.name.toUpperCase()
+                    if (nameA > nameB) {
+                        return -1;
+                        }
+                    if (nameA < nameB){
+                        return 1;
+                        }
+                    return 0;
+                    });
+    
+                    break; 
+
+    }
+       
 
         populateAds(filteredByPrice);
-     
 
     }
 
@@ -158,13 +199,6 @@ fetch('./annunci.json')
         )
         return filtered;
     }
-
-    const searchInput = document.querySelector('#searchInput');
-    const inputSearchBar = document.querySelector('#inputSearchBar');
-    const priceInputs = document.querySelectorAll('.priceInputs');
-    const rangeValues = document.querySelector ('.rangeValues');
-    let checks = document.querySelectorAll('.filterCategory')
-
 
     populatePriceFilter();
 
